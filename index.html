@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apon Coffee House</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Apon Coffee House</div>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="dark-mode-toggle" class="toggle-btn">🌙</button>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="logo-hero">Apon Coffee House</h1>
+            <p class="tagline">EVERY moment of life BEAUTIFUL COFFEE is the best</p>
+            <p class="established">Established 2005 | Location: Apon House</p>
+            <button class="cta-btn animated-btn">Explore Menu</button>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-categories">
+            <!-- Categories will be populated by JS -->
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <img src="https://source.unsplash.com/random?coffee" alt="Coffee" loading="lazy">
+                <img src="https://source.unsplash.com/random?fast-food" alt="Fast Food" loading="lazy">
+                <img src="https://source.unsplash.com/random?restaurant-interior" alt="Interior" loading="lazy">
+                <img src="https://source.unsplash.com/random?coffee-shop" alt="Coffee Shop" loading="lazy">
+            </div>
+            <button class="prev">&lt;</button>
+            <button class="next">&gt;</button>
+        </div>
+    </section>
+
+    <section id="order" class="order">
+        <h2>Order / Reservation</h2>
+        <form id="order-form">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="tel" id="phone" placeholder="Phone" required>
+            <select id="item" required>
+                <option value="">Select Item</option>
+                <!-- Options populated by JS -->
+            </select>
+            <input type="number" id="quantity" placeholder="Quantity" min="1" required>
+            <select id="type" required>
+                <option value="pickup">Pickup</option>
+                <option value="delivery">Delivery</option>
+            </select>
+            <button type="submit" class="submit-btn animated-btn">Submit Order</button>
+        </form>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p>Phone: +880 1234-567890</p>
+            <p>Email: info@aponcoffeehouse.com</p>
+            <div class="social">
+                <a href="https://facebook.com/aponcoffeehouse">Facebook</a>
+                <a href="https://twitter.com/aponcoffeehouse">Twitter</a>
+                <a href="https://instagram.com/aponcoffeehouse">Instagram</a>
+            </div>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.902!2d90.4125!3d23.8103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c64c103a8093%3A0xd6605e5f8b5d!2sDhaka%2C%20Bangladesh!5e0!3m2!1sen!2s!4v1690000000000!5m2!1sen!2s" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Apon Coffee House. All rights reserved.</p>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="social">
+            <a href="https://facebook.com/aponcoffeehouse">FB</a>
+            <a href="https://twitter.com/aponcoffeehouse">TW</a>
+            <a href="https://instagram.com/aponcoffeehouse">IG</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
